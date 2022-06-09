@@ -265,7 +265,9 @@ class Game():
         for j in range(winPercentLen):
             for i in range(winPercentLen):
                 if winPercent[i][1] == victoryCalc[j]:
-                    test = isinstance(grid[winPercent[i][0]],int)
+                    winprecentChoice = winPercent[i][0]
+                    winprecentChoice = int(winprecentChoice)
+                    test = isinstance(grid[int(winPercent[i][0])],int)
                     if test == True and winPercent[i] != 0:
                         data.append(str(winPercent[i][0]))
                         grid[winPercent[i][0]] = 'O'
@@ -293,11 +295,9 @@ class Game():
                 return True
             else:
                 for fuz in range(x):
-                    print(fuz)
                     cantPlace = isinstance(grid[fuz], int)
                     if cantPlace == False:
                         fuz += 1
-                        print(fuz)
                         if fuz == 10:
                             return False
                     else:
