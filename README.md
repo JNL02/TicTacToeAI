@@ -1,6 +1,8 @@
 # Tick Tack Toe AI
 Tic Tac Toe game made with pyhton where simple AI playes against you.
 
+Game was made: 2020 by Joonatan Langenberg
+
 Note:
   Game has still few bugs and is not quite finished.
   Main idea here was to test making very simple AI which learns from previous rounds and thus becomes better.
